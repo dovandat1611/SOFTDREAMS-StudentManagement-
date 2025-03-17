@@ -1,0 +1,12 @@
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.NHibernate\bin\Debug\net7.0\StudentManagement.NHibernate.deps.json
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.NHibernate\bin\Debug\net7.0\StudentManagement.NHibernate.dll
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.NHibernate\bin\Debug\net7.0\StudentManagement.NHibernate.pdb
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.NHibernate\obj\Debug\net7.0\StudentManagement.NHibernate.csproj.AssemblyReference.cache
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.NHibernate\obj\Debug\net7.0\StudentManagement.NHibernate.GeneratedMSBuildEditorConfig.editorconfig
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.NHibernate\obj\Debug\net7.0\StudentManagement.NHibernate.AssemblyInfoInputs.cache
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.NHibernate\obj\Debug\net7.0\StudentManagement.NHibernate.AssemblyInfo.cs
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.NHibernate\obj\Debug\net7.0\StudentManagement.NHibernate.csproj.CoreCompileInputs.cache
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.NHibernate\obj\Debug\net7.0\StudentManagement.NHibernate.dll
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.NHibernate\obj\Debug\net7.0\refint\StudentManagement.NHibernate.dll
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.NHibernate\obj\Debug\net7.0\StudentManagement.NHibernate.pdb
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.NHibernate\obj\Debug\net7.0\ref\StudentManagement.NHibernate.dll
