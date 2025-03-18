@@ -10,3 +10,6 @@ D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.gRPC\obj\Debug\net7.0
 D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.gRPC\obj\Debug\net7.0\refint\StudentManagement.gRPC.dll
 D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.gRPC\obj\Debug\net7.0\StudentManagement.gRPC.pdb
 D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.gRPC\obj\Debug\net7.0\ref\StudentManagement.gRPC.dll
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.gRPC\bin\Debug\net7.0\StudentManagement.NHibernate.dll
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.gRPC\bin\Debug\net7.0\StudentManagement.NHibernate.pdb
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.gRPC\obj\Debug\net7.0\StudentManagement.gRPC.csproj.CopyComplete

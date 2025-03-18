@@ -15,6 +15,6 @@ namespace StudentManagement.NHibernate.Models
         public virtual DateTime NgaySinh { get; set; }
         public virtual string DiaChi { get; set; } = null!;
         public virtual int MaLopHoc { get; set; }
-        public virtual LopHoc LopHoc { get; set; } = null!;
+        public virtual LopHoc? LopHoc { get; set; } 
     }
 }

@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Ox6qN8Is+MeBBHIEd+n1eE9WiU6anGkBGBURMnWHXpmdXdpowe3lh0VP/4RUcnlWn60OyBYdBR8VXUul4lrdJA==",
+  "dgSpecHash": "ZY7AsAuOM0eMJ/mx9ULYAxyGbHTFjIzvwDNV42asibHacCEpmjk5/Yl4Ev2sNa1YJ6B5DFsniVdzkNAdVuZo6A==",
   "success": true,
   "projectFilePath": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement.NHibernate\\StudentManagement.NHibernate.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\antlr3.runtime\\3.5.1\\antlr3.runtime.3.5.1.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\fluentnhibernate\\3.4.0\\fluentnhibernate.3.4.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\iesi.collections\\4.0.4\\iesi.collections.4.0.4.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",

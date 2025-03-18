@@ -1,0 +1,49 @@
+﻿syntax = "proto3";
+import "google/protobuf/empty.proto";
+import "google/protobuf/timestamp.proto"; 
+
+option csharp_namespace = "StudentManagement.Grpc";
+
+service SinhVienRPC {
+    rpc GetSinhVien(SinhVienRequest) returns (SinhVienResponse);
+    rpc GetAllSinhVien(google.protobuf.Empty) returns (GetAllSinhVienResponse);
+    rpc CreateSinhVien(CreateSinhVienRequest) returns (SinhVienResponse);
+    rpc UpdateSinhVien(UpdateSinhVienRequest) returns (SinhVienResponse);
+    rpc DeleteSinhVien(SinhVienRequest) returns (google.protobuf.Empty);
+}
+
+message SinhVien {
+    int32 maSinhVien = 1;
+    string tenSinhVien = 2;
+    google.protobuf.Timestamp ngaySinh = 3;
+    string diaChi = 4;
+    int32 maLopHoc = 5;
+    string tenLop = 6;
+}
+
+message SinhVienRequest {
+    int32 maSinhVien = 1;
+}
+
+message SinhVienResponse {
+    SinhVien student = 1;
+}
+
+message GetAllSinhVienResponse {
+    repeated SinhVien students = 1;
+}
+
+message CreateSinhVienRequest {
+    string tenSinhVien = 1;
+    google.protobuf.Timestamp ngaySinh = 2;
+    string diaChi = 3;
+    int32 maLopHoc = 4;
+}
+
+message UpdateSinhVienRequest {
+    int32 maSinhVien = 1;
+    string tenSinhVien = 2;
+    google.protobuf.Timestamp ngaySinh = 3;
+    string diaChi = 4;
+    int32 maLopHoc = 5;
+}

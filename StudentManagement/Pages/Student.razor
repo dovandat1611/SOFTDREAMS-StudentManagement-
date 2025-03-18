@@ -1,0 +1,283 @@
+﻿@page "/student"
+
+@inject ISinhVienProto sinhVienService
+@inject ILopHocProto lophocService
+@inject ModalService Modal
+@using AntDesign.TableModels
+@using System.ComponentModel.DataAnnotations
+@inject ConfirmService ComfirmService;
+
+
+<h3>Danh sách Sinh Viên</h3>
+
+<div class="mb-3">
+    <Input placeholder="Tìm kiếm sinh viên..." @bind-Value="searchTerm" @oninput="FilterStudents" style="width: 300px;" />
+</div>
+
+<div class="d-flex justify-content-between mb-3">
+    <Button Type="ButtonType.Primary" OnClick="OpenCreateModal">Thêm Sinh Viên</Button>
+    <Button Type="ButtonType.Default" OnClick="SortByName">Sắp xếp theo tên</Button>
+</div>
+
+@if (filteredSinhViens != null && filteredSinhViens.Any())
+{
+    <Table  TItem="SinhVienDto" PageSize="5" Total="_total" DataSource="filteredSinhViens" >
+        <ColumnDefinitions Context="row">
+            <Selection />
+            <GenerateColumns Definitions="@((n,c) => { c.Filterable = true; c.Sortable = true; })" />
+            <ActionColumn Title="Action">
+                <a @onclick="() => { if (row != null) OpenEditModal(row); }">Edit</a>
+                <Popconfirm Title="Are you sure to delete this task?"
+                        OnConfirm="@(() => Delete(row))"
+                        OnCancel="Cancel">
+                    <a>Delete</a>
+                </Popconfirm>
+            </ActionColumn>
+        </ColumnDefinitions>
+    </Table>
+}
+else
+{
+    <p>Không có dữ liệu.</p>
+}
+
+<!-- Modal Sửa Sinh Viên -->
+<Modal Title="@modalTitle" Visible="isModalVisibleEdit" OnOk="HandleSave" OnCancel="CloseModal">
+    <Form Model="updatingStudent">
+        <FormItem Label="Mã Sinh Viên" style="display:none;">
+            <Input @bind-Value="updatingStudent.MaSinhVien" />
+        </FormItem>
+
+        <FormItem Label="Tên Sinh Viên">
+            <Input @bind-Value="updatingStudent.TenSinhVien" />
+        </FormItem>
+
+        <FormItem Label="Ngày Sinh">
+            <DatePicker @bind-Value="updatingStudent.NgaySinh" />
+        </FormItem>
+
+        <FormItem Label="Địa Chỉ">
+            <Input @bind-Value="updatingStudent.DiaChi" />
+        </FormItem>
+        <FormItem Label="Địa Chỉ">
+            <Input @bind-Value="updatingStudent.MaLopHoc" />
+        </FormItem>
+        <AntDesign.FormItem Label="Lớp Học">
+            <Select DataSource="@_lopHocSelect"
+                    @bind-Value="@updatingStudent.MaLopHoc"
+                    ValueProperty="c=>c.MaLopHoc"
+                    LabelProperty="c=>c.TenLop"
+                    Style="width:120px">
+            </Select>
+        </AntDesign.FormItem>
+    </Form>
+</Modal>
+
+
+<Modal Title="@modalTitle" Visible="isModalVisible" OnOk="HandleOpenCreate" OnCancel="CloseModalCreate">
+    <Form Model="creatingStudent">
+        <FormItem Label="Tên Sinh Viên">
+            <Input @bind-Value="creatingStudent.TenSinhVien" />
+        </FormItem>
+        <FormItem Label="Ngày Sinh">
+            <DatePicker @bind-Value="creatingStudent.NgaySinh" />
+        </FormItem>
+        <FormItem Label="Địa Chỉ">
+            <Input @bind-Value="creatingStudent.DiaChi" />
+        </FormItem>
+        <AntDesign.FormItem Label="Lớp Học">
+            <Select DataSource="@_lopHocSelect"
+                    @bind-Value="@creatingStudent.MaLopHoc"
+                    ValueProperty="c=>c.MaLopHoc"
+                    LabelProperty="c=>c.TenLop"
+                    Style="width:120px">
+            </Select>
+        </AntDesign.FormItem>
+    </Form>
+</Modal>
+
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+    <Alert Message="@errorMessage" Type="AlertType.Error" ShowIcon="true" />
+}
+
+@code {
+    private string searchTerm = string.Empty;
+    private List<SinhVienDto> sinhViens = new();
+    private List<SinhVienDto> filteredSinhViens = new();
+    private bool isSortedAscending = true;
+    private int _total;
+
+    // Biến Modal
+    private bool isModalVisible = false;
+    private bool isModalVisibleEdit = false;
+    private string modalTitle = "Thêm Sinh Viên";
+    private CreateSinhVienRequest creatingStudent = new();
+    private UpdateSinhVienRequest updatingStudent = new();
+
+    private string errorMessage = string.Empty;
+
+    private List<LopHocDto> _lopHocSelect = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadStudents();
+    }
+
+
+    private async Task LoadStudents()
+    {
+        var response = await sinhVienService.GetAllSinhVienAsync();
+
+        if (response?.Data == null) 
+        {
+            sinhViens = new List<SinhVienDto>();  
+        }
+        else
+        {
+            sinhViens = response.Data.ToList();
+        }
+
+        filteredSinhViens = new List<SinhVienDto>(sinhViens);
+    }
+
+    private void FilterStudents(ChangeEventArgs e)
+    {
+        searchTerm = e.Value?.ToString() ?? string.Empty; 
+
+        if (string.IsNullOrWhiteSpace(searchTerm))
+        {
+            filteredSinhViens = new List<SinhVienDto>(sinhViens);
+        }
+        else
+        {
+            filteredSinhViens = sinhViens.Where(sv =>
+                sv.TenSinhVien?.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) == true ||
+                sv.MaSinhVien.ToString().Contains(searchTerm, StringComparison.OrdinalIgnoreCase) 
+            ).ToList();
+        }
+    }
+
+
+
+    private void SortByName()
+    {
+        filteredSinhViens = isSortedAscending
+            ? filteredSinhViens.OrderBy(sv => sv.TenSinhVien).ToList()
+            : filteredSinhViens.OrderByDescending(sv => sv.TenSinhVien).ToList();
+        isSortedAscending = !isSortedAscending;
+    }
+
+    private async void OpenCreateModal()
+    {
+        creatingStudent = new CreateSinhVienRequest();
+        var lopHocs =  await lophocService.GetAllLopHocAsync();
+        if(lopHocs != null)
+        {
+            _lopHocSelect = lopHocs.Data.ToList();
+
+        }
+        else
+        {
+            _lopHocSelect = new List<LopHocDto>();
+        }
+        modalTitle = "Thêm Sinh Viên";
+        isModalVisible = true;
+    }
+
+    private void OpenEditModal(SinhVienDto sv)
+    {
+        Console.WriteLine($"Opening modal for: {sv.TenSinhVien}");
+        updatingStudent = new UpdateSinhVienRequest
+            {
+                MaSinhVien = sv.MaSinhVien,
+                TenSinhVien = sv.TenSinhVien,
+                NgaySinh = sv.NgaySinh,
+                DiaChi = sv.DiaChi,
+                MaLopHoc = sv.MaLopHoc,
+            };
+
+        modalTitle = "Chỉnh Sửa Sinh Viên";
+        isModalVisibleEdit = true;
+        StateHasChanged();
+    }
+
+
+    private async Task HandleSave()
+    {
+        errorMessage = string.Empty;
+
+        if (string.IsNullOrWhiteSpace(updatingStudent.TenSinhVien) ||
+            updatingStudent.NgaySinh == default ||
+            string.IsNullOrWhiteSpace(updatingStudent.DiaChi) ||
+            updatingStudent.MaLopHoc == 0)
+        {
+            errorMessage = "Vui lòng nhập đầy đủ thông tin!";
+            return;
+        }
+
+        if (updatingStudent.MaSinhVien > 0 || updatingStudent != null)
+        {
+            await sinhVienService.UpdateSinhVienAsync(updatingStudent);
+        }
+        await LoadStudents();
+        CloseModal();
+    }
+
+
+
+    private async Task HandleOpenCreate()
+    {
+        errorMessage = string.Empty;
+
+        if (string.IsNullOrWhiteSpace(creatingStudent.TenSinhVien) ||
+            creatingStudent.NgaySinh == default ||
+            string.IsNullOrWhiteSpace(creatingStudent.DiaChi) ||
+            creatingStudent.MaLopHoc == 0)
+        {
+            errorMessage = "Vui lòng nhập đầy đủ thông tin!";
+            return;
+        }
+
+        try
+        {
+            var response = await sinhVienService.AddSinhVienAsync(creatingStudent);
+            if (response.Data != null)
+            {
+                await LoadStudents();
+                CloseModal();
+                creatingStudent = new CreateSinhVienRequest();
+            }
+            else
+            {
+                errorMessage = response.Message;
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = "Lỗi hệ thống: " + ex.Message;
+        }
+    }
+
+    private void CloseModal()
+    {
+        isModalVisibleEdit = false;
+    }
+
+    private void CloseModalCreate()
+    {
+        isModalVisible = false;
+    }
+
+    private async Task Delete(SinhVienDto row)
+    {
+        await sinhVienService.DeleteSinhVienAsync(row.MaSinhVien.ToString());
+        await LoadStudents();
+    }
+
+    private void Cancel()
+    {
+        return;
+    }
+
+}

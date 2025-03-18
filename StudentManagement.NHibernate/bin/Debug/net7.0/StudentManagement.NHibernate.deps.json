@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "StudentManagement.NHibernate/1.0.0": {
         "dependencies": {
+          "FluentNHibernate": "3.4.0",
           "NHibernate": "5.5.2",
           "System.Data.SqlClient": "4.9.0"
         },
@@ -23,6 +24,17 @@
           "lib/netstandard1.1/Antlr3.Runtime.dll": {
             "assemblyVersion": "3.5.0.2",
             "fileVersion": "3.5.1.0"
+          }
+        }
+      },
+      "FluentNHibernate/3.4.0": {
+        "dependencies": {
+          "NHibernate": "5.5.2"
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/FluentNHibernate.dll": {
+            "assemblyVersion": "3.4.0.0",
+            "fileVersion": "3.4.0.0"
           }
         }
       },
@@ -958,6 +970,13 @@
       "sha512": "sha512-ZwCEpLCLZXkjzf1lYEixp9hgVlYYk33ACHn6xjFyVhGRi2BpoYQez0qtatbetdylASWYTG+cGz0CGR4z66JM4w==",
       "path": "antlr3.runtime/3.5.1",
       "hashPath": "antlr3.runtime.3.5.1.nupkg.sha512"
+    },
+    "FluentNHibernate/3.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PLVeL749HtndhH7LRIk4NlVn5uxqGjkxf7g9QOKPVgE7yAXhFWVJzRLHdKAKfUMbAn6bnvDtswu5J2XrPlzCJw==",
+      "path": "fluentnhibernate/3.4.0",
+      "hashPath": "fluentnhibernate.3.4.0.nupkg.sha512"
     },
     "Iesi.Collections/4.0.4": {
       "type": "package",

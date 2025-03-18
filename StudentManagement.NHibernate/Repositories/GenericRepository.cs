@@ -1,4 +1,5 @@
 ﻿using NHibernate;
+using NHibernate.Linq;
 using StudentManagement.NHibernate.IRepositories;
 using System;
 using System.Collections.Generic;
@@ -41,17 +42,28 @@ namespace StudentManagement.NHibernate.Repositories
             {
                 try
                 {
+                    if (entity == null)
+                    {
+                        Console.WriteLine("🔴 Entity null, không thể lưu vào DB!");
+                        return null;
+                    }
+
+                    Console.WriteLine($"🟢 Đang lưu entity vào DB");
                     await _session.SaveAsync(entity);
                     await transaction.CommitAsync();
+
+                    Console.WriteLine("🟢 Lưu thành công!");
                     return entity;
                 }
-                catch
+                catch (Exception ex)
                 {
                     await transaction.RollbackAsync();
+                    Console.WriteLine($"🔴 Lỗi khi lưu: {ex.Message}");
                     return null;
                 }
             }
         }
+
 
         public async Task<T> GetByIdAsync(int id)
         {
@@ -60,7 +72,7 @@ namespace StudentManagement.NHibernate.Repositories
 
         public async Task<IEnumerable<T>> GetAllAsync()
         {
-            return await Task.Run(() => _session.Query<T>().ToList());
+            return await Task.Run(() => _session.Query<T>().ToListAsync());
         }
 
         public IQueryable<T> Queryable()

@@ -1,33 +1,86 @@
-﻿using Microsoft.AspNetCore.Components;
+﻿using FluentNHibernate.Cfg.Db;
+using FluentNHibernate.Cfg;
+using Grpc.Net.Client;
+using Grpc.Net.Client.Web;
+using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using NHibernate;
 using NHibernate.Cfg;
-using StudentManagement.Data;
+using StudentManagement.gRPC.Services;
 using StudentManagement.NHibernate;
+using StudentManagement.NHibernate.Mappings;
 using StudentManagement.NHibernate.UnitOfWork;
+using StudentManagement.gRPC.AutoMapper;
+using ProtoBuf.Grpc.Client;
+using StudentManagement.gRPC.IServices;
+using StudentManagement.NHibernate.IRepositories;
+using StudentManagement.NHibernate.Repositories;
+using ProtoBuf.Grpc.Server;
 
 var builder = WebApplication.CreateBuilder(args);
+
+
+// AntDesign
+builder.Services.AddAntDesign();
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 
 
+// NHibernate Configuration
 builder.Services.AddSingleton<ISessionFactory>(provider =>
 {
-    var cfg = new Configuration();
-    cfg.Configure(@"D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.NHibernate\ConfigDB\nhibernate.cfg.xml");
-    cfg.AddFile(@"D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.NHibernate\Mappings\ManageStudent.hdm.xml");
-    return cfg.BuildSessionFactory();
+    return Fluently.Configure()
+        .Database(MsSqlConfiguration.MsSql2012
+            .ConnectionString(builder.Configuration.GetConnectionString("DefautConnection"))
+            .ShowSql())
+        .Mappings(m => m.FluentMappings
+        .AddFromAssemblyOf<SinhVienMap>()
+        .AddFromAssemblyOf<GiaoVienMap>()
+        .AddFromAssemblyOf<LopHocMap>()
+        )
+        .BuildSessionFactory();
 });
 
-builder.Services.AddScoped<NHibernate.ISession>(provider =>
-    provider.GetRequiredService<ISessionFactory>().OpenSession());
 
+// Đăng ký ISession
+builder.Services.AddScoped(factory =>
+{
+    var sessionFactory = factory.GetRequiredService<ISessionFactory>();
+    return sessionFactory.OpenSession();
+});
+
+// Repository
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
+builder.Services.AddSingleton(serviceProvider =>
+{
+    var httpHandler = new GrpcWebHandler(GrpcWebMode.GrpcWeb, new HttpClientHandler());
+    return GrpcChannel.ForAddress("https://localhost:7275", new GrpcChannelOptions { HttpHandler = httpHandler });
+});
 
-builder.Services.AddSingleton<WeatherForecastService>();
+builder.Services.AddSingleton<ISinhVienProto>(serviceProvider =>
+{
+    var channel = serviceProvider.GetRequiredService<GrpcChannel>(); 
+    return channel.CreateGrpcService<ISinhVienProto>();
+});
+
+builder.Services.AddSingleton<ILopHocProto>(serviceProvider =>
+{
+    var channel = serviceProvider.GetRequiredService<GrpcChannel>();
+    return channel.CreateGrpcService<ILopHocProto>();
+});
+
+
+// AutoMapper
+builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
+
+// gRPC Configuration
+
+builder.Services.AddGrpc();
+builder.Services.AddCodeFirstGrpc();
+builder.Services.AddGrpcReflection();
 
 var app = builder.Build();
 
@@ -39,11 +92,15 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+
 app.UseHttpsRedirection();
 
 app.UseStaticFiles();
-
 app.UseRouting();
+app.UseGrpcWeb();
+app.MapGrpcService<SinhVienService>().EnableGrpcWeb();
+app.MapGrpcService<LopHocService>().EnableGrpcWeb();
+
 
 app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");
