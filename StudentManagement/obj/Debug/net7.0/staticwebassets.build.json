@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aXj8s2mCwmSxJ53PVDVYaiXCyOcOiZhvfGv0tXNPfb4=",
+  "Hash": "XDY63mlxrNtzVZcLAaMP0O42vzcTRQ4sE5dWsFO61+Q=",
   "Source": "StudentManagement",
   "BasePath": "_content/StudentManagement",
   "Mode": "Default",
@@ -16,6 +16,74 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\Lenovo\\.nuget\\packages\\antdesign.charts\\0.5.8\\staticwebassets\\AntDesign.Charts.av4k20dzh2.lib.module.js",
+      "SourceId": "AntDesign.Charts",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\Lenovo\\.nuget\\packages\\antdesign.charts\\0.5.8\\staticwebassets\\",
+      "BasePath": "_content/AntDesign.Charts",
+      "RelativePath": "AntDesign.Charts.av4k20dzh2.lib.module.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "JSModule",
+      "AssetTraitValue": "JSLibraryModule",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Lenovo\\.nuget\\packages\\antdesign.charts\\0.5.8\\staticwebassets\\AntDesign.Charts.av4k20dzh2.lib.module.js"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo\\.nuget\\packages\\antdesign.charts\\0.5.8\\staticwebassets\\ant-design-charts-blazor.js",
+      "SourceId": "AntDesign.Charts",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\Lenovo\\.nuget\\packages\\antdesign.charts\\0.5.8\\staticwebassets\\",
+      "BasePath": "_content/AntDesign.Charts",
+      "RelativePath": "ant-design-charts-blazor.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Lenovo\\.nuget\\packages\\antdesign.charts\\0.5.8\\staticwebassets\\ant-design-charts-blazor.js"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo\\.nuget\\packages\\antdesign.charts\\0.5.8\\staticwebassets\\g2plot.min.js",
+      "SourceId": "AntDesign.Charts",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\Lenovo\\.nuget\\packages\\antdesign.charts\\0.5.8\\staticwebassets\\",
+      "BasePath": "_content/AntDesign.Charts",
+      "RelativePath": "g2plot.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Lenovo\\.nuget\\packages\\antdesign.charts\\0.5.8\\staticwebassets\\g2plot.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo\\.nuget\\packages\\antdesign.charts\\0.5.8\\staticwebassets\\g2plot.min.js.map",
+      "SourceId": "AntDesign.Charts",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\Lenovo\\.nuget\\packages\\antdesign.charts\\0.5.8\\staticwebassets\\",
+      "BasePath": "_content/AntDesign.Charts",
+      "RelativePath": "g2plot.min.js.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Lenovo\\.nuget\\packages\\antdesign.charts\\0.5.8\\staticwebassets\\g2plot.min.js.map"
+    },
     {
       "Identity": "C:\\Users\\Lenovo\\.nuget\\packages\\antdesign\\1.2.1\\staticwebassets\\AntDesign.d05dnpfa5s.lib.module.js",
       "SourceId": "AntDesign",
@@ -6611,6 +6679,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement\\wwwroot\\js\\downloadExcel.js",
+      "SourceId": "StudentManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement\\wwwroot\\",
+      "BasePath": "_content/StudentManagement",
+      "RelativePath": "js/downloadExcel.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\downloadExcel.js"
     }
   ]
 }

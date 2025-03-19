@@ -72,6 +72,12 @@ builder.Services.AddSingleton<ILopHocProto>(serviceProvider =>
     return channel.CreateGrpcService<ILopHocProto>();
 });
 
+builder.Services.AddSingleton<IGiaoVienProto>(serviceProvider =>
+{
+    var channel = serviceProvider.GetRequiredService<GrpcChannel>();
+    return channel.CreateGrpcService<IGiaoVienProto>();
+});
+
 
 // AutoMapper
 builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
@@ -100,6 +106,7 @@ app.UseRouting();
 app.UseGrpcWeb();
 app.MapGrpcService<SinhVienService>().EnableGrpcWeb();
 app.MapGrpcService<LopHocService>().EnableGrpcWeb();
+app.MapGrpcService<GiaoVienService>().EnableGrpcWeb();
 
 
 app.MapBlazorHub();

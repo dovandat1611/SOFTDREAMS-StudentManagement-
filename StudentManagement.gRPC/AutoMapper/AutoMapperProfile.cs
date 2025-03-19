@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using StudentManagement.gRPC.Dtos.Class;
 using StudentManagement.gRPC.Dtos.Student;
+using StudentManagement.gRPC.Dtos.Teacher;
 using StudentManagement.NHibernate.Models;
 using System;
 using System.Collections.Generic;
@@ -23,6 +24,8 @@ namespace StudentManagement.gRPC.AutoMapper
                     .ForMember(dest => dest.LopHoc, opt => opt.Ignore());
 
             CreateMap<LopHoc, LopHocDto>();
+
+            CreateMap<GiaoVien, GiaoVienDto>().ReverseMap();
         }
     }
 }

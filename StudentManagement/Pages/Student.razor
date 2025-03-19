@@ -21,7 +21,7 @@
 
 @if (filteredSinhViens != null && filteredSinhViens.Any())
 {
-    <Table  TItem="SinhVienDto" PageSize="5" Total="_total" DataSource="filteredSinhViens" >
+    <Table  TItem="SinhVienDto" PageSize="10" Total="_total" DataSource="filteredSinhViens" >
         <ColumnDefinitions Context="row">
             <Selection />
             <GenerateColumns Definitions="@((n,c) => { c.Filterable = true; c.Sortable = true; })" />

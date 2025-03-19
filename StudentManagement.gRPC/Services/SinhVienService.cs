@@ -28,8 +28,6 @@ namespace StudentManagement.gRPC.Services
 
         public async Task<ResponseWrapper<SinhVienDto>> AddSinhVienAsync(CreateSinhVienRequest request)
         {
-            Console.WriteLine("🟢 Bắt đầu AddSinhVienAsync");
-            Console.WriteLine($"📌 Dữ liệu nhận vào: TenSinhVien={request.TenSinhVien}, NgaySinh={request.NgaySinh}, DiaChi={request.DiaChi}, MaLopHoc={request.MaLopHoc}");
 
             var lopHoc = await _unitOfWork.LopHoc.GetByIdAsync(request.MaLopHoc);
             if (lopHoc == null)
@@ -48,24 +46,18 @@ namespace StudentManagement.gRPC.Services
 
             try
             {
-
-
-                Console.WriteLine("🟢 Đang gọi CreateAndReturnAsync...");
                 var create =  await _unitOfWork.SinhVien.CreateAndReturnAsync(sinhVien);
                 await _unitOfWork.SaveChangesAsync();
                 var createdSinhVien = create;
                 if (createdSinhVien == null)
                 {
-                    Console.WriteLine("🔴 CreateAndReturnAsync trả về null!");
                     return new ResponseWrapper<SinhVienDto>("Thêm sinh viên thất bại", null);
                 }
 
-                Console.WriteLine($"🟢 Sinh viên được tạo: Id={createdSinhVien.MaSinhVien}, TenSinhVien={createdSinhVien.TenSinhVien}");
                 return new ResponseWrapper<SinhVienDto>("Thêm sinh viên thành công", _mapper.Map<SinhVienDto>(createdSinhVien));
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"🔴 Lỗi khi thêm sinh viên: {ex.Message}");
                 return new ResponseWrapper<SinhVienDto>("Thêm sinh viên thất bại", null);
             }
         }

@@ -219,6 +219,14 @@
               "target": "Package",
               "version": "[1.2.1, )"
             },
+            "AntDesign.Charts": {
+              "target": "Package",
+              "version": "[0.5.8, )"
+            },
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.104.2, )"
+            },
             "Grpc.AspNetCore.Server.Reflection": {
               "target": "Package",
               "version": "[2.70.0, )"

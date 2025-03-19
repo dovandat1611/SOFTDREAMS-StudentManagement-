@@ -81,3 +81,13 @@ D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\bin\Debug\net7.0\prot
 D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\bin\Debug\net7.0\AntDesign.dll
 D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\bin\Debug\net7.0\OneOf.dll
 D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\obj\Debug\net7.0\jsmodules\jsmodules.build.manifest.json
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\bin\Debug\net7.0\AntDesign.Charts.dll
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\bin\Debug\net7.0\ClosedXML.dll
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\bin\Debug\net7.0\ClosedXML.Parser.dll
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\bin\Debug\net7.0\DocumentFormat.OpenXml.dll
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\bin\Debug\net7.0\DocumentFormat.OpenXml.Framework.dll
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\bin\Debug\net7.0\ExcelNumberFormat.dll
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\bin\Debug\net7.0\RBush.dll
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\bin\Debug\net7.0\SixLabors.Fonts.dll
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\bin\Debug\net7.0\System.IO.Packaging.dll
