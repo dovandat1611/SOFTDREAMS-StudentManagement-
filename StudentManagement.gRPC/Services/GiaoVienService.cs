@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
-using StudentManagement.gRPC.Common;
-using StudentManagement.gRPC.Dtos.Class;
-using StudentManagement.gRPC.Dtos.Teacher;
-using StudentManagement.gRPC.IServices;
-using StudentManagement.NHibernate.Models;
+using StudentManagement.Common;
+using StudentManagement.Common.Dtos.Class;
+using StudentManagement.Common.Dtos.Teacher;
+using StudentManagement.Common.IServices;
+using StudentManagement.Common.Models;
 using StudentManagement.NHibernate.UnitOfWork;
 using System;
 using System.Collections.Generic;

@@ -1,4 +1,7 @@
-﻿@code {
+﻿@using StudentManagement.Common.Dtos.Class
+@using StudentManagement.Common.Dtos.Student
+
+@code {
     [Parameter] public CreateSinhVienRequest? creatingStudent { get; set; }
     [Parameter] public EventCallback HandleCreate { get; set; }
     [Parameter] public EventCallback OnCloseCreateDrawer { get; set; }

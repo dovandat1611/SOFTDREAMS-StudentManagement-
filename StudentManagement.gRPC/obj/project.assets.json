@@ -2091,6 +2091,10 @@
       "StudentManagement.Common/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "AutoMapper": "13.0.1",
+          "protobuf-net.Grpc": "1.2.2"
+        },
         "compile": {
           "bin/placeholder/StudentManagement.Common.dll": {}
         },

@@ -1,4 +1,7 @@
-﻿@code {
+﻿@using StudentManagement.Common.Dtos.Class
+@using StudentManagement.Common.Dtos.Student
+
+@code {
     [Parameter] public UpdateSinhVienRequest? updatingStudent { get; set; }
     [Parameter] public EventCallback HandleUpdate { get; set; }
     [Parameter] public EventCallback OnCloseUpdateDrawer { get; set; }

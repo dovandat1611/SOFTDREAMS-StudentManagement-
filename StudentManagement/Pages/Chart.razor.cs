@@ -4,10 +4,9 @@ using ClosedXML.Excel;
 using DocumentFormat.OpenXml.Drawing.Charts;
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
-using StudentManagement.gRPC.Dtos.Teacher;
-using StudentManagement.gRPC.IServices;
+using StudentManagement.Common.Dtos.Teacher;
+using StudentManagement.Common.IServices;
 using System.Data; 
-using StudentManagement.NHibernate.UnitOfWork;
 using DocumentFormat.OpenXml.InkML;
 
 namespace StudentManagement.Pages

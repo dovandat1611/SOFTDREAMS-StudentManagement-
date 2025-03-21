@@ -1,5 +1,5 @@
 ﻿using FluentNHibernate.Mapping;
-using StudentManagement.NHibernate.Models;
+using StudentManagement.Common.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

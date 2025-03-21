@@ -1,11 +1,11 @@
 ﻿using AntDesign;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
-using StudentManagement.gRPC.Dtos.Class;
-using StudentManagement.gRPC.Dtos.Student;
-using StudentManagement.gRPC.Dtos.Teacher;
-using StudentManagement.gRPC.IServices;
-using StudentManagement.gRPC.Services;
+using StudentManagement.Common.Dtos.Class;
+using StudentManagement.Common.Dtos.Class;
+using StudentManagement.Common.Dtos.Student;
+using StudentManagement.Common.Dtos.Teacher;
+using StudentManagement.Common.IServices;
 using System.Threading.Tasks;
 
 namespace StudentManagement.Pages
