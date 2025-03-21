@@ -1,0 +1,637 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{079DD17C-F63C-4B9B-B874-8F7D74FBC991}|StudentManagement\\StudentManagement.csproj|d:\\softdreams-training\\studentmanagement\\studentmanagement\\pages\\student.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{079DD17C-F63C-4B9B-B874-8F7D74FBC991}|StudentManagement\\StudentManagement.csproj|solutionrelative:studentmanagement\\pages\\student.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{079DD17C-F63C-4B9B-B874-8F7D74FBC991}|StudentManagement\\StudentManagement.csproj|d:\\softdreams-training\\studentmanagement\\studentmanagement\\pages\\student.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{079DD17C-F63C-4B9B-B874-8F7D74FBC991}|StudentManagement\\StudentManagement.csproj|solutionrelative:studentmanagement\\pages\\student.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{079DD17C-F63C-4B9B-B874-8F7D74FBC991}|StudentManagement\\StudentManagement.csproj|d:\\softdreams-training\\studentmanagement\\studentmanagement\\pages\\component\\studentdrawerupdate.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{079DD17C-F63C-4B9B-B874-8F7D74FBC991}|StudentManagement\\StudentManagement.csproj|solutionrelative:studentmanagement\\pages\\component\\studentdrawerupdate.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{079DD17C-F63C-4B9B-B874-8F7D74FBC991}|StudentManagement\\StudentManagement.csproj|d:\\softdreams-training\\studentmanagement\\studentmanagement\\pages\\component\\studentdrawercreate.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{079DD17C-F63C-4B9B-B874-8F7D74FBC991}|StudentManagement\\StudentManagement.csproj|solutionrelative:studentmanagement\\pages\\component\\studentdrawercreate.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{188364D6-62A4-4949-AF59-E31F6EB0A8B7}|StudentManagement.gRPC\\StudentManagement.gRPC.csproj|d:\\softdreams-training\\studentmanagement\\studentmanagement.grpc\\services\\sinhvienservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{188364D6-62A4-4949-AF59-E31F6EB0A8B7}|StudentManagement.gRPC\\StudentManagement.gRPC.csproj|solutionrelative:studentmanagement.grpc\\services\\sinhvienservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB58878E-DD3A-4CDA-9A50-5012EA563214}|StudentManagement.NHibernate\\StudentManagement.NHibernate.csproj|d:\\softdreams-training\\studentmanagement\\studentmanagement.nhibernate\\repositories\\sinhvienrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB58878E-DD3A-4CDA-9A50-5012EA563214}|StudentManagement.NHibernate\\StudentManagement.NHibernate.csproj|solutionrelative:studentmanagement.nhibernate\\repositories\\sinhvienrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB58878E-DD3A-4CDA-9A50-5012EA563214}|StudentManagement.NHibernate\\StudentManagement.NHibernate.csproj|d:\\softdreams-training\\studentmanagement\\studentmanagement.nhibernate\\irepositories\\isinhvienrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB58878E-DD3A-4CDA-9A50-5012EA563214}|StudentManagement.NHibernate\\StudentManagement.NHibernate.csproj|solutionrelative:studentmanagement.nhibernate\\irepositories\\isinhvienrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B54249A6-8679-4EFF-B17C-5E6677CB2304}|StudentManagement.Common\\StudentManagement.Common.csproj|d:\\softdreams-training\\studentmanagement\\studentmanagement.common\\dtos\\getsearchobjectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B54249A6-8679-4EFF-B17C-5E6677CB2304}|StudentManagement.Common\\StudentManagement.Common.csproj|solutionrelative:studentmanagement.common\\dtos\\getsearchobjectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{079DD17C-F63C-4B9B-B874-8F7D74FBC991}|StudentManagement\\StudentManagement.csproj|d:\\softdreams-training\\studentmanagement\\studentmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{079DD17C-F63C-4B9B-B874-8F7D74FBC991}|StudentManagement\\StudentManagement.csproj|solutionrelative:studentmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{079DD17C-F63C-4B9B-B874-8F7D74FBC991}|StudentManagement\\StudentManagement.csproj|d:\\softdreams-training\\studentmanagement\\studentmanagement\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{079DD17C-F63C-4B9B-B874-8F7D74FBC991}|StudentManagement\\StudentManagement.csproj|solutionrelative:studentmanagement\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B54249A6-8679-4EFF-B17C-5E6677CB2304}|StudentManagement.Common\\StudentManagement.Common.csproj|d:\\softdreams-training\\studentmanagement\\studentmanagement.common\\dtos\\pagedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B54249A6-8679-4EFF-B17C-5E6677CB2304}|StudentManagement.Common\\StudentManagement.Common.csproj|solutionrelative:studentmanagement.common\\dtos\\pagedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{079DD17C-F63C-4B9B-B874-8F7D74FBC991}|StudentManagement\\StudentManagement.csproj|d:\\softdreams-training\\studentmanagement\\studentmanagement\\pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{079DD17C-F63C-4B9B-B874-8F7D74FBC991}|StudentManagement\\StudentManagement.csproj|solutionrelative:studentmanagement\\pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{079DD17C-F63C-4B9B-B874-8F7D74FBC991}|StudentManagement\\StudentManagement.csproj|d:\\softdreams-training\\studentmanagement\\studentmanagement\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{079DD17C-F63C-4B9B-B874-8F7D74FBC991}|StudentManagement\\StudentManagement.csproj|solutionrelative:studentmanagement\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB58878E-DD3A-4CDA-9A50-5012EA563214}|StudentManagement.NHibernate\\StudentManagement.NHibernate.csproj|d:\\softdreams-training\\studentmanagement\\studentmanagement.nhibernate\\studentmanagement.nhibernate.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{EB58878E-DD3A-4CDA-9A50-5012EA563214}|StudentManagement.NHibernate\\StudentManagement.NHibernate.csproj|solutionrelative:studentmanagement.nhibernate\\studentmanagement.nhibernate.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB58878E-DD3A-4CDA-9A50-5012EA563214}|StudentManagement.NHibernate\\StudentManagement.NHibernate.csproj|d:\\softdreams-training\\studentmanagement\\studentmanagement.nhibernate\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB58878E-DD3A-4CDA-9A50-5012EA563214}|StudentManagement.NHibernate\\StudentManagement.NHibernate.csproj|solutionrelative:studentmanagement.nhibernate\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB58878E-DD3A-4CDA-9A50-5012EA563214}|StudentManagement.NHibernate\\StudentManagement.NHibernate.csproj|d:\\softdreams-training\\studentmanagement\\studentmanagement.nhibernate\\repositories\\giaovienrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB58878E-DD3A-4CDA-9A50-5012EA563214}|StudentManagement.NHibernate\\StudentManagement.NHibernate.csproj|solutionrelative:studentmanagement.nhibernate\\repositories\\giaovienrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 66,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{873151d0-cf2e-48cc-b4bf-ad0394f6a3c3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1377497384:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:15:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:16:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:17:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:14:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:10:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:9:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:8:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:7:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:7:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:16:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:17:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{588470cc-84f8-4a57-9ac4-86bca0625ff4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1928210406:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:350743133:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:20:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:29:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:24:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:22:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:23:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:44:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Student.razor.cs",
+              "DocumentMoniker": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement\\Pages\\Student.razor.cs",
+              "RelativeDocumentMoniker": "StudentManagement\\Pages\\Student.razor.cs",
+              "ToolTip": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement\\Pages\\Student.razor.cs",
+              "RelativeToolTip": "StudentManagement\\Pages\\Student.razor.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAewBUAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T10:31:39.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SinhVienRepository.cs",
+              "DocumentMoniker": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement.NHibernate\\Repositories\\SinhVienRepository.cs",
+              "RelativeDocumentMoniker": "StudentManagement.NHibernate\\Repositories\\SinhVienRepository.cs",
+              "ToolTip": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement.NHibernate\\Repositories\\SinhVienRepository.cs",
+              "RelativeToolTip": "StudentManagement.NHibernate\\Repositories\\SinhVienRepository.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAlwA0AAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T08:32:52.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Student.razor",
+              "DocumentMoniker": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement\\Pages\\Student.razor",
+              "RelativeDocumentMoniker": "StudentManagement\\Pages\\Student.razor",
+              "ToolTip": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement\\Pages\\Student.razor",
+              "RelativeToolTip": "StudentManagement\\Pages\\Student.razor",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAAAEcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T10:31:40.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SinhVienService.cs",
+              "DocumentMoniker": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement.gRPC\\Services\\SinhVienService.cs",
+              "RelativeDocumentMoniker": "StudentManagement.gRPC\\Services\\SinhVienService.cs",
+              "ToolTip": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement.gRPC\\Services\\SinhVienService.cs",
+              "RelativeToolTip": "StudentManagement.gRPC\\Services\\SinhVienService.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAADgv1UAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T08:33:09.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentDrawerCreate.razor",
+              "DocumentMoniker": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement\\Pages\\Component\\StudentDrawerCreate.razor",
+              "RelativeDocumentMoniker": "StudentManagement\\Pages\\Component\\StudentDrawerCreate.razor",
+              "ToolTip": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement\\Pages\\Component\\StudentDrawerCreate.razor",
+              "RelativeToolTip": "StudentManagement\\Pages\\Component\\StudentDrawerCreate.razor",
+              "ViewState": "AgIAABQAAAAAAAAAAAAIwCAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T10:32:51.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StudentDrawerUpdate.razor",
+              "DocumentMoniker": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement\\Pages\\Component\\StudentDrawerUpdate.razor",
+              "RelativeDocumentMoniker": "StudentManagement\\Pages\\Component\\StudentDrawerUpdate.razor",
+              "ToolTip": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement\\Pages\\Component\\StudentDrawerUpdate.razor",
+              "RelativeToolTip": "StudentManagement\\Pages\\Component\\StudentDrawerUpdate.razor",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAIAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-21T04:18:20.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ISinhVienRepository.cs",
+              "DocumentMoniker": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement.NHibernate\\IRepositories\\ISinhVienRepository.cs",
+              "RelativeDocumentMoniker": "StudentManagement.NHibernate\\IRepositories\\ISinhVienRepository.cs",
+              "ToolTip": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement.NHibernate\\IRepositories\\ISinhVienRepository.cs",
+              "RelativeToolTip": "StudentManagement.NHibernate\\IRepositories\\ISinhVienRepository.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAuwAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T08:33:04.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GetSearchObjectDto.cs",
+              "DocumentMoniker": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement.Common\\Dtos\\GetSearchObjectDto.cs",
+              "RelativeDocumentMoniker": "StudentManagement.Common\\Dtos\\GetSearchObjectDto.cs",
+              "ToolTip": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement.Common\\Dtos\\GetSearchObjectDto.cs",
+              "RelativeToolTip": "StudentManagement.Common\\Dtos\\GetSearchObjectDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T01:27:22.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement\\Program.cs",
+              "RelativeDocumentMoniker": "StudentManagement\\Program.cs",
+              "ToolTip": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement\\Program.cs",
+              "RelativeToolTip": "StudentManagement\\Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T04:37:19.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.razor",
+              "DocumentMoniker": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "StudentManagement\\Pages\\Index.razor",
+              "ToolTip": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement\\Pages\\Index.razor",
+              "RelativeToolTip": "StudentManagement\\Pages\\Index.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-21T02:43:43.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PagedResult.cs",
+              "DocumentMoniker": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement.Common\\Dtos\\PagedResult.cs",
+              "RelativeDocumentMoniker": "StudentManagement.Common\\Dtos\\PagedResult.cs",
+              "ToolTip": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement.Common\\Dtos\\PagedResult.cs",
+              "RelativeToolTip": "StudentManagement.Common\\Dtos\\PagedResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T01:28:36.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "StudentManagement.NHibernate.csproj",
+              "DocumentMoniker": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement.NHibernate\\StudentManagement.NHibernate.csproj",
+              "RelativeDocumentMoniker": "StudentManagement.NHibernate\\StudentManagement.NHibernate.csproj",
+              "ToolTip": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement.NHibernate\\StudentManagement.NHibernate.csproj",
+              "RelativeToolTip": "StudentManagement.NHibernate\\StudentManagement.NHibernate.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-20T10:31:13.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement\\Pages\\Error.cshtml",
+              "RelativeDocumentMoniker": "StudentManagement\\Pages\\Error.cshtml",
+              "ToolTip": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement\\Pages\\Error.cshtml",
+              "RelativeToolTip": "StudentManagement\\Pages\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T10:32:17.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_Host.cshtml",
+              "DocumentMoniker": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement\\Pages\\_Host.cshtml",
+              "RelativeDocumentMoniker": "StudentManagement\\Pages\\_Host.cshtml",
+              "ToolTip": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement\\Pages\\_Host.cshtml",
+              "RelativeToolTip": "StudentManagement\\Pages\\_Host.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T10:32:19.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement.NHibernate\\Repositories\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "StudentManagement.NHibernate\\Repositories\\GenericRepository.cs",
+              "ToolTip": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement.NHibernate\\Repositories\\GenericRepository.cs",
+              "RelativeToolTip": "StudentManagement.NHibernate\\Repositories\\GenericRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T08:33:03.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "GiaoVienRepository.cs",
+              "DocumentMoniker": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement.NHibernate\\Repositories\\GiaoVienRepository.cs",
+              "RelativeDocumentMoniker": "StudentManagement.NHibernate\\Repositories\\GiaoVienRepository.cs",
+              "ToolTip": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement.NHibernate\\Repositories\\GiaoVienRepository.cs",
+              "RelativeToolTip": "StudentManagement.NHibernate\\Repositories\\GiaoVienRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T08:33:03.158Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1052,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:10:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:26:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:31:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:32:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:33:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:35:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:38:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:40:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:42:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:15:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:8:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:9:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:28:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1304,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

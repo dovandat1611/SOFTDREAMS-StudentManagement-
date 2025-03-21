@@ -1366,27 +1366,43 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
+      "StudentManagement.Common/1.0.0": {
+        "runtime": {
+          "StudentManagement.Common.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "StudentManagement.gRPC/1.0.0": {
         "dependencies": {
           "AutoMapper": "13.0.1",
           "Google.Protobuf": "3.30.1",
           "Grpc.AspNetCore": "2.70.0",
           "Grpc.Net.Client": "2.70.0",
+          "StudentManagement.Common": "1.0.0",
           "StudentManagement.NHibernate": "1.0.0",
           "protobuf-net.Grpc": "1.2.2"
         },
         "runtime": {
-          "StudentManagement.gRPC.dll": {}
+          "StudentManagement.gRPC.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "StudentManagement.NHibernate/1.0.0": {
         "dependencies": {
           "FluentNHibernate": "3.4.0",
           "NHibernate": "5.5.2",
+          "StudentManagement.Common": "1.0.0",
           "System.Data.SqlClient": "4.9.0"
         },
         "runtime": {
-          "StudentManagement.NHibernate.dll": {}
+          "StudentManagement.NHibernate.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
@@ -2404,6 +2420,11 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
+    },
+    "StudentManagement.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "StudentManagement.gRPC/1.0.0": {
       "type": "project",

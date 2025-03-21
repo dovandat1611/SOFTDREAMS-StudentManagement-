@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\StudentManagement.bundle.scp.css",
-      "PackagePath": "staticwebassets\\StudentManagement.bundle.scp.css"
+      "PackagePath": "staticwebassets\\StudentManagement.qm6kaa289y.bundle.scp.css"
     },
     {
       "Id": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
@@ -59,6 +59,10 @@
     {
       "Id": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement\\wwwroot\\js\\downloadExcel.js",
       "PackagePath": "staticwebassets\\js\\downloadExcel.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.StudentManagement.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.StudentManagement.Microsoft.AspNetCore.StaticWebAssets.props",

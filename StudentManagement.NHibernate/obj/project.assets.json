@@ -1673,6 +1673,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "StudentManagement.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/StudentManagement.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StudentManagement.Common.dll": {}
+        }
       }
     }
   },
@@ -5555,12 +5565,18 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "StudentManagement.Common/1.0.0": {
+      "type": "project",
+      "path": "../StudentManagement.Common/StudentManagement.Common.csproj",
+      "msbuildProject": "../StudentManagement.Common/StudentManagement.Common.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "FluentNHibernate >= 3.4.0",
       "NHibernate >= 5.5.2",
+      "StudentManagement.Common >= 1.0.0",
       "System.Data.SqlClient >= 4.9.0"
     ]
   },
@@ -5595,14 +5611,24 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement.Common\\StudentManagement.Common.csproj": {
+              "projectPath": "D:\\SOFTDREAMS-TRAINING\\StudentManagement\\StudentManagement.Common\\StudentManagement.Common.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net7.0": {
@@ -5637,7 +5663,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

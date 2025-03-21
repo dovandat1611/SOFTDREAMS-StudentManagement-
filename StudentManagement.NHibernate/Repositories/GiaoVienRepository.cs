@@ -11,6 +11,9 @@ namespace StudentManagement.NHibernate.Repositories
 {
     public class GiaoVienRepository : GenericRepository<GiaoVien>, IGiaoVienRepository
     {
-        public GiaoVienRepository(ISession session) : base(session) { }
+        private readonly ISession _session;
+        public GiaoVienRepository(ISession session) : base(session) {
+            _session = session;
+        }
     }
 }

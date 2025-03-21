@@ -1,4 +1,5 @@
 ﻿using ProtoBuf.Grpc.Configuration;
+using StudentManagement.Common.Dtos;
 using StudentManagement.gRPC.Common;
 using StudentManagement.gRPC.Dtos.Student;
 using System;
@@ -14,7 +15,7 @@ namespace StudentManagement.gRPC.IServices
     public interface ISinhVienProto
     {
         [OperationContract]
-        Task<ResponseWrapper<List<SinhVienDto>>> GetAllSinhVienAsync();
+        Task<ResponseWrapper<PagedResult<SinhVienDto>>> GetAllSinhVienAsync(SinhVienRequest request);
 
         [OperationContract]
         Task<ResponseWrapper<SinhVienDto>> AddSinhVienAsync(CreateSinhVienRequest request);
@@ -24,9 +25,6 @@ namespace StudentManagement.gRPC.IServices
 
         [OperationContract]
         Task<ResponseWrapper<bool>> DeleteSinhVienAsync(string maSinhVien);
-
-        [OperationContract]
-        Task<ResponseWrapper<IEnumerable<SinhVienDto>>> GetSortedSinhVienByNameAsync();
 
         [OperationContract]
         Task<ResponseWrapper<SinhVienDto?>> GetSinhVienByIdAsync(string maSinhVien);

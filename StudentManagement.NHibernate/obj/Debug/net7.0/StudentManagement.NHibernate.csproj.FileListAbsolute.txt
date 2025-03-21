@@ -10,3 +10,7 @@ D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.NHibernate\obj\Debug\
 D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.NHibernate\obj\Debug\net7.0\refint\StudentManagement.NHibernate.dll
 D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.NHibernate\obj\Debug\net7.0\StudentManagement.NHibernate.pdb
 D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.NHibernate\obj\Debug\net7.0\ref\StudentManagement.NHibernate.dll
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.NHibernate\bin\Debug\net7.0\StudentManagement.Common.dll
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.NHibernate\bin\Debug\net7.0\StudentManagement.Common.pdb
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.NHibernate\obj\Debug\net7.0\StudentManagement.NHibernate.sourcelink.json
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.NHibernate\obj\Debug\net7.0\StudentM.DB0B92B1.Up2Date

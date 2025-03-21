@@ -21,6 +21,7 @@ namespace StudentManagement.NHibernate.IRepositories
         Task<bool> UpdateAsync(T entity);
 
         Task<bool> DeleteAsync(int id);
+        Task<int> CountAsync();
 
         Task<bool> DeleteRangeAsync(List<T> entities);
 

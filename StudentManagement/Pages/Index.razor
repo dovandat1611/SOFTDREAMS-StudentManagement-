@@ -1,56 +1,22 @@
 ﻿@page "/"
-@inject IUnitOfWork UnitOfWork
+@inject NotificationService _notice
 
-<PageTitle>Index</PageTitle>
+<Button Type="ButtonType.Primary" OnClick="OnClick">
+    Open the notification box
+</Button>
 
-<h1>Hello, world!</h1>
-
-Welcome to your new app.
-
-<SurveyPrompt Title="How is Blazor working for you?" />
-
-<PageTitle>Danh sách Sinh Viên</PageTitle>
-
-<h1>Danh sách Sinh Viên</h1>
-
-@if (sinhViens == null)
-{
-    <p>Đang tải dữ liệu...</p>
-}
-else if (sinhViens.Count == 0)
-{
-    <p>Không có dữ liệu sinh viên.</p>
-}
-else
-{
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Mã SV</th>
-                <th>Tên SV</th>
-                <th>Ngày Sinh</th>
-                <th>Địa Chỉ</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var sv in sinhViens)
-            {
-                <tr>
-                    <td>@sv.MaSinhVien</td>
-                    <td>@sv.TenSinhVien</td>
-                    <td>@sv.NgaySinh.ToString("dd/MM/yyyy")</td>
-                    <td>@sv.DiaChi</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-}
+<Notification/>
 
 @code {
-    private List<StudentManagement.NHibernate.Models.SinhVien> sinhViens = new();
 
-    protected override async Task OnInitializedAsync()
+    private async Task OnClick()
     {
-        sinhViens = (await UnitOfWork.SinhVien.GetAllAsync()).ToList();
+        RenderFragment customIcon = @<Icon Type="@IconType.Outline.Smile" Style="color:#108ee9;" />;
+        await _notice.Open(new NotificationConfig()
+            {
+                Message = "Notification Title",
+                Description = "This is the content of the notification. This is the content of the notification. This is the content of the notification.",
+                Icon = customIcon
+            });
     }
 }

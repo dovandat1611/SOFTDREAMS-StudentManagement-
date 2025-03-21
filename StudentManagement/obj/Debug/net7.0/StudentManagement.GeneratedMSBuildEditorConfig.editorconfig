@@ -10,11 +10,15 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = StudentManagement
 build_property.RootNamespace = StudentManagement
 build_property.ProjectDir = D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement
 build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 7.0
+build_property.EnableCodeStyleSeverity = 
 
 [D:/SOFTDREAMS-TRAINING/StudentManagement/StudentManagement/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
@@ -22,6 +26,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/SOFTDREAMS-TRAINING/StudentManagement/StudentManagement/Pages/Chart.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hhcnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SOFTDREAMS-TRAINING/StudentManagement/StudentManagement/Pages/Component/StudentDrawerCreate.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50XFN0dWRlbnREcmF3ZXJDcmVhdGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SOFTDREAMS-TRAINING/StudentManagement/StudentManagement/Pages/Component/StudentDrawerUpdate.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50XFN0dWRlbnREcmF3ZXJVcGRhdGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/SOFTDREAMS-TRAINING/StudentManagement/StudentManagement/Pages/Index.razor]

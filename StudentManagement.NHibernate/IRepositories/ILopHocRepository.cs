@@ -1,4 +1,5 @@
-﻿using StudentManagement.NHibernate.Models;
+﻿using StudentManagement.Common.Dtos;
+using StudentManagement.NHibernate.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,5 +10,7 @@ namespace StudentManagement.NHibernate.IRepositories
 {
     public interface ILopHocRepository : IGenericRepository<LopHoc>
     {
+
+
     }
 }

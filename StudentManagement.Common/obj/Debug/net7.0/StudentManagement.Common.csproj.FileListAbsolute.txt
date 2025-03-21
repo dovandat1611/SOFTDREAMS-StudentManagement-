@@ -1,0 +1,12 @@
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.Common\bin\Debug\net7.0\StudentManagement.Common.deps.json
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.Common\bin\Debug\net7.0\StudentManagement.Common.dll
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.Common\bin\Debug\net7.0\StudentManagement.Common.pdb
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.Common\obj\Debug\net7.0\StudentManagement.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.Common\obj\Debug\net7.0\StudentManagement.Common.AssemblyInfoInputs.cache
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.Common\obj\Debug\net7.0\StudentManagement.Common.AssemblyInfo.cs
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.Common\obj\Debug\net7.0\StudentManagement.Common.csproj.CoreCompileInputs.cache
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.Common\obj\Debug\net7.0\StudentManagement.Common.dll
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.Common\obj\Debug\net7.0\refint\StudentManagement.Common.dll
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.Common\obj\Debug\net7.0\StudentManagement.Common.pdb
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.Common\obj\Debug\net7.0\ref\StudentManagement.Common.dll
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.Common\obj\Debug\net7.0\StudentManagement.Common.sourcelink.json

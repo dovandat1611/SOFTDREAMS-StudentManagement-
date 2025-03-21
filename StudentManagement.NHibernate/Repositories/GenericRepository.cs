@@ -18,6 +18,19 @@ namespace StudentManagement.NHibernate.Repositories
             _session = session;
         }
 
+        public async Task<int> CountAsync()
+        {
+            try
+            {
+                return await _session.Query<T>().CountAsync();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error in CountAsync: {ex.Message}");
+                return 0;
+            }
+        }
+
         public async Task<bool> CreateAsync(T entity)
         {
             using (var transaction = _session.BeginTransaction())
@@ -35,6 +48,9 @@ namespace StudentManagement.NHibernate.Repositories
                 }
             }
         }
+
+
+
 
         public async Task<T> CreateAndReturnAsync(T entity)
         {

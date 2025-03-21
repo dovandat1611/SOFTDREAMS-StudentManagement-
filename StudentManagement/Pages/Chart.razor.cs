@@ -26,9 +26,8 @@ namespace StudentManagement.Pages
         ColumnConfig config1 = new()
         {
             IsGroup = true,
-            XField = "tenLop",
-            YField = "soSinhVien",
-            SeriesField = "teacherId",
+            XField = "tenlop",
+            YField = "sosinhvien",
             YAxis = new AntDesign.Charts.ValueAxis()
             {
                 Min = 0,
@@ -83,9 +82,9 @@ namespace StudentManagement.Pages
             {
                 chartData = chartResponse.Select(c => new
                 {
-                    TeacherId = c.MaGiaoVien,
-                    TenLop = c.TenLop,
-                    SoSinhVien = c.SoSinhVien
+                    giaovien = c.MaGiaoVien,
+                    tenlop = c.TenLop,
+                    sosinhvien = c.SoSinhVien
                 }).Cast<object>().ToList();
             }
             else

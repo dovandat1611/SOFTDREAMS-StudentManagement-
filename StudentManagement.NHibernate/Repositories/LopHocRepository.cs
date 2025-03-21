@@ -1,4 +1,6 @@
 ﻿using NHibernate;
+using NHibernate.Linq;
+using StudentManagement.Common.Dtos;
 using StudentManagement.NHibernate.IRepositories;
 using StudentManagement.NHibernate.Models;
 using System;
@@ -11,6 +13,10 @@ namespace StudentManagement.NHibernate.Repositories
 {
     public class LopHocRepository : GenericRepository<LopHoc>, ILopHocRepository
     {
-        public LopHocRepository(ISession session) : base(session) { }
+        private readonly ISession _session;
+        public LopHocRepository(ISession session) : base(session) { 
+            _session = session;
+        }
+
     }
 }

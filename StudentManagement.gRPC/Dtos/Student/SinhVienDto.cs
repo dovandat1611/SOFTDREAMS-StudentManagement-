@@ -11,18 +11,20 @@ namespace StudentManagement.gRPC.Dtos.Student
     public class SinhVienDto
     {
         [DataMember(Order = 1)]
-        public int MaSinhVien { get; set; }
+        public int STT { get; set; }
         [DataMember(Order = 2)]
-        public string TenSinhVien { get; set; } = null!;
+        public int MaSinhVien { get; set; }
         [DataMember(Order = 3)]
-        public DateTime NgaySinh { get; set; }
+        public string TenSinhVien { get; set; } = null!;
         [DataMember(Order = 4)]
-        public string DiaChi { get; set; } = null!;
+        public DateTime NgaySinh { get; set; }
         [DataMember(Order = 5)]
-        public int MaLopHoc { get; set; }
+        public string DiaChi { get; set; } = null!;
         [DataMember(Order = 6)]
-        public string TenLop { get; set; } = null!;
+        public int MaLopHoc { get; set; }
         [DataMember(Order = 7)]
+        public string TenLop { get; set; } = null!;
+        [DataMember(Order = 8)]
         public string MonHoc { get; set; } = null!;
 
         public SinhVienDto() { }

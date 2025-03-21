@@ -12,4 +12,7 @@ D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.gRPC\obj\Debug\net7.0
 D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.gRPC\obj\Debug\net7.0\ref\StudentManagement.gRPC.dll
 D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.gRPC\bin\Debug\net7.0\StudentManagement.NHibernate.dll
 D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.gRPC\bin\Debug\net7.0\StudentManagement.NHibernate.pdb
-D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.gRPC\obj\Debug\net7.0\StudentManagement.gRPC.csproj.CopyComplete
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.gRPC\bin\Debug\net7.0\StudentManagement.Common.dll
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.gRPC\bin\Debug\net7.0\StudentManagement.Common.pdb
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.gRPC\obj\Debug\net7.0\StudentManagement.gRPC.sourcelink.json
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement.gRPC\obj\Debug\net7.0\StudentM.2020797A.Up2Date

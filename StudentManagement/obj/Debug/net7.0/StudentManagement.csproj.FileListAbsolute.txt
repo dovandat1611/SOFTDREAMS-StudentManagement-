@@ -49,7 +49,6 @@ D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\obj\Debug\net7.0\scop
 D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\obj\Debug\net7.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
 D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\obj\Debug\net7.0\scopedcss\bundle\StudentManagement.styles.css
 D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\obj\Debug\net7.0\scopedcss\projectbundle\StudentManagement.bundle.scp.css
-D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\obj\Debug\net7.0\StudentManagement.csproj.CopyComplete
 D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\obj\Debug\net7.0\StudentManagement.dll
 D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\obj\Debug\net7.0\refint\StudentManagement.dll
 D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\obj\Debug\net7.0\StudentManagement.pdb
@@ -91,3 +90,11 @@ D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\bin\Debug\net7.0\Exce
 D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\bin\Debug\net7.0\RBush.dll
 D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\bin\Debug\net7.0\SixLabors.Fonts.dll
 D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\bin\Debug\net7.0\System.IO.Packaging.dll
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\bin\Debug\net7.0\StudentManagement.Common.dll
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\bin\Debug\net7.0\StudentManagement.Common.pdb
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\bin\Debug\net7.0\StudentManagement.staticwebassets.endpoints.json
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\obj\Debug\net7.0\StudentManagement.sourcelink.json
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\obj\Debug\net7.0\staticwebassets.build.endpoints.json
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\obj\Debug\net7.0\staticwebassets\msbuild.StudentManagement.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\obj\Debug\net7.0\staticwebassets.upToDateCheck.txt
+D:\SOFTDREAMS-TRAINING\StudentManagement\StudentManagement\obj\Debug\net7.0\StudentM.FBDC7194.Up2Date

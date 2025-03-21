@@ -21,6 +21,7 @@
 
 
 	<ItemGroup>
+	  <ProjectReference Include="..\StudentManagement.Common\StudentManagement.Common.csproj" />
 	  <ProjectReference Include="..\StudentManagement.NHibernate\StudentManagement.NHibernate.csproj" />
 	</ItemGroup>
 

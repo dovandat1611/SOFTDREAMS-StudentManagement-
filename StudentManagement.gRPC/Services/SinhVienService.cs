@@ -2,6 +2,7 @@
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
 using NHibernate.Linq;
+using StudentManagement.Common.Dtos;
 using StudentManagement.gRPC.Common;
 using StudentManagement.gRPC.Dtos.Student;
 using StudentManagement.gRPC.IServices;
@@ -76,12 +77,25 @@ namespace StudentManagement.gRPC.Services
             return new ResponseWrapper<bool>("Xóa sinh viên thành công", true);
         }
 
-        public async Task<ResponseWrapper<List<SinhVienDto>>> GetAllSinhVienAsync()
+        public async Task<ResponseWrapper<PagedResult<SinhVienDto>>> GetAllSinhVienAsync(SinhVienRequest request)
         {
-            var sinhViens = await _unitOfWork.SinhVien.GetAllAsync();
-            var sinhVienDtos = _mapper.Map<List<SinhVienDto>>(sinhViens);
 
-            return new ResponseWrapper<List<SinhVienDto>>("Lấy danh sách sinh viên thành công", sinhVienDtos);
+            var response = await _unitOfWork.SinhVien.GetStudentListWithClassAsync(request.PageNumber, request.PageSize, request.searchBySomething, request.sort);
+            var sinhVienDtos = _mapper.Map<List<SinhVienDto>>(response.Data);
+
+            int totalCount = response.totalRecord;
+            int totalPages = (int)Math.Ceiling((double)totalCount / request.PageSize);
+
+            var pagedSinhVienDtos = new PagedResult<SinhVienDto>
+            {
+                Items = sinhVienDtos,
+                TotalPages = totalPages,
+                CurrentPage = request.PageNumber,
+                PageSize = request.PageSize,
+                TotalCount = totalCount
+            };
+
+            return new ResponseWrapper<PagedResult<SinhVienDto>>("Lấy danh sách sinh viên thành công", pagedSinhVienDtos);
         }
 
         public async Task<ResponseWrapper<SinhVienDto?>> GetSinhVienByIdAsync(string maSinhVien)
@@ -96,14 +110,15 @@ namespace StudentManagement.gRPC.Services
             return new ResponseWrapper<SinhVienDto?>("Lấy thông tin sinh viên thành công", sinhVienDto);
         }
 
-        public async Task<ResponseWrapper<IEnumerable<SinhVienDto>>> GetSortedSinhVienByNameAsync()
-        {
-            var sinhViens = await _unitOfWork.SinhVien.GetAllAsync();
-            var sortedSinhViens = sinhViens.OrderBy(s => s.TenSinhVien);
-            var sinhVienDtos = _mapper.Map<IEnumerable<SinhVienDto>>(sortedSinhViens);
+        //public async Task<ResponseWrapper<PagedResult<SinhVienDto>>> GetSortedSinhVienByNameAsync(SinhVienRequest request)
+        //{
 
-            return new ResponseWrapper<IEnumerable<SinhVienDto>>("Sắp xếp sinh viên thành công", sinhVienDtos);
-        }
+        //    var sinhViens = await _unitOfWork.SinhVien.GetStudentSortByNameAsync( );
+        //    var sortedSinhViens = sinhViens.OrderBy(s => s.TenSinhVien);
+        //    var sinhVienDtos = _mapper.Map<IEnumerable<SinhVienDto>>(sortedSinhViens);
+
+        //    return new ResponseWrapper<IEnumerable<SinhVienDto>>("Sắp xếp sinh viên thành công", sinhVienDtos);
+        //}
 
         public async Task<ResponseWrapper<SinhVienDto>> UpdateSinhVienAsync(UpdateSinhVienRequest request)
         {

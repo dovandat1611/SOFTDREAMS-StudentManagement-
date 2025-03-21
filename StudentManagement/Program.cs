@@ -16,6 +16,7 @@ using StudentManagement.gRPC.IServices;
 using StudentManagement.NHibernate.IRepositories;
 using StudentManagement.NHibernate.Repositories;
 using ProtoBuf.Grpc.Server;
+using AntDesign;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -50,6 +51,9 @@ builder.Services.AddScoped(factory =>
     var sessionFactory = factory.GetRequiredService<ISessionFactory>();
     return sessionFactory.OpenSession();
 });
+
+builder.Services.AddScoped<INotificationService, NotificationService>();
+
 
 // Repository
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
